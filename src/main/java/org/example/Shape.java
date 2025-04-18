@@ -1,4 +1,10 @@
 package org.example;
+interface Shape {
+    double getArea();
+    void draw();
 
-public class Shape {
+    default void displayType() {
+        System.out.println("This is a shape.");
+    }
 }
+
